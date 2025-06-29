@@ -221,7 +221,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
        String cnicText = cnic.getText();
-String password = new String(psd.getPassword());
+String password = new String(psd.getText());
 
 if (!cnicText.isEmpty() && !password.isEmpty()) {
 
@@ -233,7 +233,7 @@ if (!cnicText.isEmpty() && !password.isEmpty()) {
   
    
    else if( manger.checkuser(cnicText, password) ){
-           
+           manger.cnic=cnicText;
         
         this.setVisible(false);
         this.dispose();

@@ -5,6 +5,7 @@
 package election.system;
 
 import Entity.C_server;
+import Frames.Sign_up;
 
 /**
  *
@@ -17,7 +18,7 @@ public class ElectionSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-     C_server.connectToServer();
+   new Sign_up().setVisible(true);
     }
     
 }
